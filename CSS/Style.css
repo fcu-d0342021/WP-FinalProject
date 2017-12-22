@@ -1,0 +1,17 @@
+.titleBar
+{
+	background-color: orange;
+}
+.centerTitle
+{
+	text-align: center;
+	font-size: 300%;
+	padding-top: 50px;
+}
+.signInSignUp
+{
+	/*padding: 50px;*/
+	text-align: right;
+	padding-top: 10px;
+	/*padding-left: 200px;*/
+}
