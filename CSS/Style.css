@@ -15,7 +15,26 @@
 	text-align: right;
 	padding-top: 10px;
 }
-ul 
+.news
+{
+	height: 200px;
+	width: 100%;
+	background-color: white;
+}
+.moreButton
+{
+	text-align: right;
+	padding-top: 150px;
+	height: 200px;
+}
+.secondaryTitle
+{
+	text-align: center;
+	font-size: 250%;
+	font-family: Microsoft JhengHei;
+	padding-top: 40px;
+}
+ul
 {
 	list-style-type: none;
 	width: 100%;
