@@ -7,14 +7,13 @@
 {
 	text-align: center;
 	font-size: 300%;
+	font-family: Microsoft JhengHei;
 	padding-top: 50px;
 }
 .signInSignUp
 {
-	/*padding: 50px;*/
 	text-align: right;
 	padding-top: 10px;
-	/*padding-left: 200px;*/
 }
 ul 
 {
