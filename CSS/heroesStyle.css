@@ -1,0 +1,81 @@
+.rowRank
+{
+	position: relative;
+	left:50px;
+}
+
+.Rank
+{
+	background-color: #d491d380;
+	text-align: middle;
+}
+
+.donor
+{
+	text-align: center;
+	height: 100px;
+}
+
+.item
+{
+	left: 20px;
+	top: 15px;
+}
+
+.space
+{
+	height: 100px;
+}
+
+.image
+{
+	position: relative;
+	top:20px;
+	left:15px;
+}
+
+.more
+{
+	padding-top: 75px;
+}
+
+.detail
+{
+	left:20px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.page
+{
+	position: relative;
+	left: 35%;
+	top:20px;
+}
+
+.Herocontent
+{
+	display: block;
+	position: relative;
+	margin-left: 10%;
+	width: 80%;
+	height: 100%;
+	background-image: url('../images/background.jpg');
+	background-repeat:no-repeat;
+}
