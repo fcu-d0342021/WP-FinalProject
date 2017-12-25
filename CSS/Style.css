@@ -46,7 +46,7 @@
 	height: 100%;
 	width: 100%;
 }
-ul
+.menu ul
 {
 	list-style-type: none;
 	width: 100%;
@@ -55,11 +55,11 @@ ul
 	overflow: hidden;
 	background-color: #333;
 }
-li 
+.signInSignUp li 
 {
 	float: right;
 }
-li a 
+.signInSignUp a 
 {
 	display: block;
 	color: white;
@@ -68,14 +68,14 @@ li a
 	text-decoration: none;
 }
 
-li a:hover 
+.signInSignUp a:hover 
 {
 	background-color: white;
 	color: black;
 	text-decoration: none;
 }
 
-li a:active 
+.signInSignUp a:active 
 {
 	background-color: white;
 	color: black;
