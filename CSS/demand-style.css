@@ -1,0 +1,143 @@
+.categoryList ul {
+    list-style: none;
+    margin: 0px;
+}
+
+#category {
+    float: left;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.categoryList li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin-top: 7px;
+    margin-right: 20px;
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.categoryList a {
+    color: #000;
+}
+
+.categoryList a:hover {
+    background: gray;
+    color: black;
+    text-decoration: none;
+}
+
+.categoryList li:hover {
+    height: 50px;
+    background: gray;
+    color: black;
+    border: 2px solid #000;
+    border-bottom: 0px solid white;
+    margin-bottom: -2px;
+}
+
+.active  {
+    height: 50px;
+    overflow: hidden;
+    background: white;
+    border: 2px solid #000;
+    border-bottom: 0px solid white;
+    margin-bottom: -2px;
+}
+
+li.active:hover {
+    height: 50px;
+    overflow: hidden;
+    background: white;
+    border: 2px solid #000;
+    border-bottom: 0px solid white;
+    margin-bottom: -2px;
+}
+
+.active a:hover {
+    background: white;
+}
+
+.tab_container {
+    clear: both;
+    background: white;
+    border: 2px solid #000;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px; 
+}
+
+.tab_content ul {
+    margin-top: 10px;
+}
+
+.tab_content li {
+    display: inline-block;
+    width: 27%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+    border: 1px solid black;
+}
+
+.tab_content img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.tab_content a , .tab_content a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.tab_content h4 {
+    float: left;
+    font-size: 30px;
+    margin-top: 25%;
+}
+
+.tab_content p {
+    clear: both;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+#demand {
+    margin-top: 10px;
+}
+
+#belong {
+    float: left;
+}
+
+.tab_content button {
+    float: left;
+    margin-left: 150px;
+}
+
+.page {
+    margin-left: 47%;
+    margin-bottom: 30px;
+}
+
+.page a {
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.page a:hover {
+    color: white;
+    background: black;
+}
