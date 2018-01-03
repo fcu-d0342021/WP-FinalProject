@@ -1,9 +1,21 @@
+.background
+{
+	display: block;
+	position: relative;
+	margin-left: 10%;
+	width: 80%;
+	height: 100%;
+	background-image: url('../images/background.jpg');
+	background-repeat:no-repeat;
+}
+
 .Login
 {
 	background-color:#FFAC55;
 	margin:0 auto;
 	width:300px;
-	height:140px;
+	height:200px;
+	position:relative;
 }
 
 .createAccount
@@ -11,7 +23,8 @@
 	background-color:#FFAC55;
 	margin:0 auto;
 	width:300px;
-	height:140px;
+	height:300px;
+	position:relative;
 }
 
 .sendButton
@@ -21,6 +34,8 @@
 
 .page
 {
+	position:relative;
+	top:20px;
 	text-align: center;
 }
 

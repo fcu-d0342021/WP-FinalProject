@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+<link rel="stylesheet" type="text/css" href="./CSS/Style.css">
 	<link rel="stylesheet" type="text/css" href="./CSS/LoginStyle.css">
 	<head>
 		<meta charset="utf-8">
-		<title>登入</title>
+		<title>註冊</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,11 +12,11 @@
 	</head>
 
 	<body>
-<div class="titleBar row">
+		<div class="titleBar row">
 		    <div class="col-sm-3">
 				<a href=".\HomePage.html"><img src=".\images\home.png" width="150" height="150"></img></a>
 		  	</div>
-		    <div class="centerTitle col-sm-6" >登入</div>
+		    <div class="centerTitle col-sm-6" >註冊</div>
 		</div>
 		<div class="menu">
             <ul>
@@ -40,16 +40,20 @@
             </ul>
         </div>
 
-	<div class="background">
-		<div class="Login">
-			<div class="page">
-			<h5 style="font-family:Microsoft JhengHei;">帳號或Email</h5>
-			<input type="text" name="LoginAccount"/><br>
+    <div class="background">
+    <div class="createAccount">
+		<div class="page">
+			<h5 style="font-family:Microsoft JhengHei;">Email</h5>
+			<input type="text" name="Email"/><br>
+			<h5 style="font-family:Microsoft JhengHei;">帳號</h5>
+			<input type="text" name="Username"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">密碼</h5>
-			<input type="password" name="LoginPassword"/><br>
-			<input type="button" value="登入">
-			</div>
+			<input type="password" name="Password"/><br>
+			<h5 style="font-family:Microsoft JhengHei;">確認密碼</h5>
+			<input type="password" name="ConfirmPassword"/><br>
+			<input type="button" value="送出">
 		</div>
+	</div>
 	</div>
 	</body>
 </html>
