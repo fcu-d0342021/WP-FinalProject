@@ -1,3 +1,22 @@
+input[type="button"]
+{
+	background-color: antiquewhite;
+    font-family: Microsoft JhengHei;
+    font-size: 140%;
+    border-radius: 12%;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input[type="button"]:hover
+{
+	background-color: yellow;
+}
+input[type="button"]:active 
+{
+  box-shadow: 0 3px gray;
+  transform: translateY(20%);
+}
 .titleBar
 {
 	background-color: orange;
