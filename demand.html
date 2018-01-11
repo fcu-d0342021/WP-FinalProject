@@ -11,7 +11,16 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script>
 			$(function(){
-				var _showTab = 0;
+				//URL
+			    var url = location.href;		    
+			    //取得問號之後的值
+			    var temp = url.split("?");
+			    var _showTab = 0;
+			    if(temp.length > 1)
+			    {
+			    	_showTab = temp[1];
+			    }
+
 				var $defaultLi = $('.categoryList li').eq(_showTab).addClass('active');
 				$($defaultLi.find('a').attr('href')).siblings().hide();
  
