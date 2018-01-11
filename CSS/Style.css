@@ -29,11 +29,6 @@ input[type="button"]:active
 	font-family: Microsoft JhengHei;
 	padding-top: 50px;
 }
-.signInSignUp
-{
-	text-align: right;
-	padding-top: 10px;
-}
 .news
 {
 	height: 250px;
@@ -65,20 +60,12 @@ input[type="button"]:active
 	height: 100%;
 	width: 100%;
 }
-.menu ul
+.signInSignUp
 {
-	list-style-type: none;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
+	text-align: right;
+	padding-top: 10px;
 }
-.signInSignUp li 
-{
-	float: right;
-}
-.signInSignUp a 
+.menu a 
 {
 	display: block;
 	color: white;
@@ -87,18 +74,41 @@ input[type="button"]:active
 	text-decoration: none;
 }
 
-.signInSignUp a:hover 
+.menu {
+	display: inline-block;
+	padding: 0% 7.3%;
+}
+
+@media(max-width: 1660px){
+	.menu {
+		padding: 0% 5.8%;
+	}
+}
+
+@media(max-width: 1061px){
+	.menu {
+		padding: 0% 4.35%;
+	}
+}
+
+
+
+.menu a:hover 
 {
 	background-color: white;
 	color: black;
 	text-decoration: none;
 }
 
-.signInSignUp a:active 
+.menu a:active 
 {
 	background-color: white;
 	color: black;
 	text-decoration: none;
+}
+
+.navbar-nav {
+	float: none !important;
 }
 
 .content 
