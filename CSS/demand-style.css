@@ -118,7 +118,7 @@ li.active:hover {
     float: left;
 }
 
-.tab_content button {
+.tab_content input {
     float: left;
     margin-left: 150px;
 }
