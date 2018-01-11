@@ -72,50 +72,54 @@ input[type="button"]:active
 	text-align: right;
 	padding-top: 10px;
 }
-.menu a 
+.nav>li>a 
 {
-	display: block;
-	color: white;
+	display: block !important;
+	color: white !important;
 	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+	padding: 14px 16px !important;
+	text-decoration: none !important;
 }
 
-.menu {
+.nav>li {
 	display: inline-block;
 	padding: 0% 7.3%;
 }
 
 @media(max-width: 1660px){
-	.menu {
+	.nav>li {
 		padding: 0% 5.8%;
 	}
 }
 
 @media(max-width: 1061px){
-	.menu {
+	.nav>li {
 		padding: 0% 4.35%;
 	}
 }
 
 
 
-.menu a:hover 
+.nav>li>a:hover 
 {
-	background-color: white;
-	color: black;
-	text-decoration: none;
+	background-color: white !important;
+	color: black !important;
+	text-decoration: none !important;
 }
 
-.menu a:active 
+.nav>li>a:active 
 {
-	background-color: white;
-	color: black;
-	text-decoration: none;
+	background-color: white !important;
+	color: black !important;
+	text-decoration: none !important;
 }
 
 .navbar-nav {
 	float: none !important;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
 }
 
 .content 
