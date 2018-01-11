@@ -4,7 +4,6 @@
 	<link rel="stylesheet" type="text/css" href="./CSS/heroesStyle.css">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>英雄榜</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -27,26 +26,27 @@
                 <input type="button" value="註冊" onclick="location.href='CreateAccount.html'">
             </div>
         </div>
-        <nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>                        
-					</button>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li><a href=".\HomePage.html">首頁</a></li>
-						<li><a>活動快訊</a></li>
-						<li><a>最新消息</a></li>
-						<li><a href="demand.html">需求牆</a></li>
-						<li><a href="Heroes.html">英雄榜</a></li>
-					</ul>
-				</div>
-				</div>
-		</nav>
+        <div class="menu">
+            <ul>
+                <div class="row">
+                    <div class="signInSignUp col-sm-2" >
+                        <li><a href=".\HomePage.html">首頁</a></li>
+                    </div>
+                    <div class="signInSignUp col-sm-2" >
+                        <li><a>活動快訊</a></li>
+                    </div>
+                    <div class="signInSignUp col-sm-2" >
+                        <li><a>最新消息</a></li>
+                    </div>
+                    <div class="signInSignUp col-sm-2" >
+                        <li><a href="demand.html">需求牆</a></li>
+                    </div>
+                    <div class="signInSignUp col-sm-2" >
+                        <li><a href="Heroes.html">英雄榜</a></li>
+                    </div>
+                </div>
+            </ul>
+        </div>
         <div class="Herocontent">
         	<div class = "row space col-sm-12" style="margin-left: 0;"></div>
         	<div class="row rowRank">
@@ -73,93 +73,93 @@
         	</div>
         	<div class="row rowRank">
         		<div class="Rank col-sm-3 donor">
-        			<h1>捐贈者:憨頭</h1>
+        			<h2>捐贈者:憨頭</h2>
         		</div>
         		<div class="col-sm-1"></div>
         		<div class="Rank col-sm-3 donor">
-        			<h1>捐贈者:憨頭</h1>
+        			<h2>捐贈者:憨頭</h2>
         		</div>
         		<div class="col-sm-1"></div>
         		<div class="Rank col-sm-3 donor">
-        			<h1>捐贈者:憨頭</h1>
+        			<h2>捐贈者:憨頭</h2>
         		</div>
         	</div>
 
         	<div class = "row space col-sm-12" style="margin-left: 0;"></div>
         	<div class = "row">
         		<div class="col-sm-1"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-6 image"><img src=".\images\blackman.jpg" width="100" height="100"></div>
-        			<div class="col-sm-6">
-        				<h2>黑人問號</h2>
-        				<h2>排行: 6</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-6 image"><img class = "UserImg" src=".\images\blackman.jpg" width="100" height="100"></div>
+        			<div class="col-sm-6 col-position" style="padding-left: 30px;">
+        				<h3>黑人問號</h3>
+        				<h3>排行: 6</h3>
         			</div>
         		</div>
         		<div class="col-sm-2"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-6 image"><img src=".\images\eatfinger.jpg" width="100" height="100"></div>
-        			<div class="col-sm-6">
-        				<h2>吃手手手</h2>
-        				<h2>排行: 2</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-6 image"><img class = "UserImg" src=".\images\eatfinger.jpg" width="100" height="100"></div>
+        			<div class="col-sm-6 col-position" style="padding-left: 30px;">
+            			<h3>吃手手</h3>
+            			<h3>排行: 2</h3>
         			</div>
         		</div>
         	</div>
 
         	<div class = "row">
         		<div class="col-sm-1"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-10 detail">
-        				<h2>捐贈物: 衣服</h2>
-        				<h2>數量: 兩件</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-9 detail">
+        				<h3>捐贈物: 衣服</h3>
+        				<h3>數量: 2件</h3>
         			</div>
-        			<div class="col-sm-2 more"><input type="button" value="更多"></div>
+        			<div class="col-sm-3 more"><input type="button" value="更多"></div>
         		</div>
         		<div class="col-sm-2"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-10 detail">
-        				<h2>捐贈物: 金錢</h2>
-        				<h2>數量: 50元</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-9 detail">
+        				<h3>捐贈物: 金錢</h3>
+        				<h3>數量: 50元</h3>
         			</div>
-        			<div class="col-sm-2 more"><input type="button" value="更多"></div>
+        			<div class="col-sm-3 more"><input type="button" value="更多"></div>
         		</div>
         	</div>
 
         	<div class = "row space col-sm-12" style="margin-left: 0;"></div>
         	<div class = "row">
         		<div class="col-sm-1"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-6 image"><img src=".\images\two.jpg" width="100" height="100"></div>
-        			<div class="col-sm-6">
-        				<h2>二號小孩</h2>
-        				<h2>排行: 20</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-6 image"><img class = "UserImg" src=".\images\two.jpg" width="100" height="100"></div>
+        			<div class="col-sm-6 col-position" style="padding-left: 30px;">
+        				<h3>二號小孩</h3>
+        				<h3>排行: 20</h3>
         			</div>
         		</div>
         		<div class="col-sm-2"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-6 image"><img src=".\images\chicken.jpg" width="100" height="100"></div>
-        			<div class="col-sm-6">
-        				<h2>炸雞勇者</h2>
-        				<h2>排行: 13</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-6 image"><img class = "UserImg" src=".\images\chicken.jpg" width="100" height="100"></div>
+        			<div class="col-sm-6 col-position" style="padding-left: 30px;">
+        				<h3>炸雞勇者</h3>
+        				<h3>排行: 13</h3>
         			</div>
         		</div>
         	</div>
 
         	<div class = "row">
         		<div class="col-sm-1"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-10 detail">
-        				<h2>捐贈物: 棒棒糖</h2>
-        				<h2>數量: 10根</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-9 detail">
+        				<h3>捐贈物: 棒棒糖</h3>
+        				<h3>數量: 10根</h3>
         			</div>
-        			<div class="col-sm-2 more"><input type="button" value="更多"></div>
+        			<div class="col-sm-3 more"><input type="button" value="更多"></div>
         		</div>
         		<div class="col-sm-2"></div>
-        		<div class="Rank col-sm-4">
-        			<div class="col-sm-10 detail">
-        				<h2>捐贈物: 炸雞</h2>
-        				<h2>數量: 一桶</h2>
+        		<div class="Rank col-sm-4 col-hight">
+        			<div class="col-sm-9 detail">
+        				<h3>捐贈物: 炸雞</h3>
+        				<h3>數量: 1桶</h3>
         			</div>
-        			<div class="col-sm-2 more"><input type="button" value="更多"></div>
+        			<div class="col-sm-3 more"><input type="button" value="更多"></div>
         		</div>
         	</div>
 
