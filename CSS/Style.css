@@ -59,6 +59,13 @@ input[type="button"]:active
 	position: relative;
 	left: 25%;
 	top: 25%;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.entranceImage:hover
+{
+	cursor: pointer;
+	background-color: lightgray;
 }
 .entranceImage img
 {
