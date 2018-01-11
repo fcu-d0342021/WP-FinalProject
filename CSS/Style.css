@@ -20,7 +20,21 @@ input[type="button"]:active
 .titleBar
 {
 	background-color: orange;
-	width: 101.25%;
+	width: 100%;
+}
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+@media(max-width: 768px) {
+	.logo {
+		text-align: center;
+	}
+	.signInSignUp {
+		text-align: center !important;
+	}
 }
 .centerTitle
 {
