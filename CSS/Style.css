@@ -29,9 +29,6 @@ input[type="button"]:active
 }
 
 @media(max-width: 767px) {
-	.logo {
-		text-align: center;
-	}
 	.signInSignUp {
 		text-align: center !important;
 	}
