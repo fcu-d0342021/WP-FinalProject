@@ -34,6 +34,10 @@
 				}).find('a').focus(function(){
 					this.blur();
 				});
+
+				$('.dropdown-menu li').click(function() {
+					$('.dropdown-toggle').html($('.dropdown-menu .active').text() + ' <span class="caret"></span>')
+				});
 			});
 		</script>
 	</head>
@@ -73,87 +77,80 @@
 		<div class="content">
 			<div class="categoryList">
 				<h4 id="category">分類</h4>
-				<ul>
-					<li><a href="#livelihood-supplies">民生用品</a></li>
-					<li><a href="#medicine">藥品</a></li>
-					<li><a href="#money">金錢</a></li>
+				<ul class="desktop-category">
+					<li class="well"><a href="#livelihood-supplies">民生用品</a></li>
+					<li class="well"><a href="#medicine">藥品</a></li>
+					<li class="well"><a href="#money">金錢</a></li>
 				</ul>
+				<div class="mobile-category dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">民生用品
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#livelihood-supplies">民生用品</a></li>
+						<li><a href="#medicine">藥品</a></li>
+						<li><a href="#money">金錢</a></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="tab_container">
 				<div id="livelihood-supplies" class="tab_content">
 					<ul>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/coat.jpg">
-								<h4 id="name">名稱：外套</h4>
-								<p id="demand">需求數：10 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/coat.jpg">
+							<h4 class="col-sm-6" id="name">名稱：外套</h4>
+							<p class="col-sm-12" id="demand">需求數：10 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 					</ul>
 					<div class="page">
@@ -165,76 +162,60 @@
 				<div id="medicine" class="tab_content">
 					<ul>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/OK Bon.jpg">
-								<h4 id="name">名稱：OK蹦</h4>
-								<p id="demand">需求數：50 件</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/OK Bon.jpg">
+							<h4 class="col-sm-6" id="name">名稱：OK蹦</h4>
+							<p class="col-sm-12" id="demand">需求數：50 件</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 					</ul>
 					<div class="page">
@@ -246,76 +227,60 @@
 				<div id="money" class="tab_content">
 					<ul>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 						<li>
-							<div>
-								<img src="images/money.jpg">
-								<h4 id="name">名稱：金援</h4>
-								<p id="demand">需求額：5000 元</p>
-								<p id="belong">所屬單位：???</p>
-								<input type="button" value="更多">
-							</div>
+							<img class="col-sm-6" src="images/money.jpg">
+							<h4 class="col-sm-6" id="name">名稱：金援</h4>
+							<p class="col-sm-12" id="demand">需求額：5000 元</p>
+							<p class="col-sm-12" id="belong">所屬單位：???</p>
+							<input type="button" value="更多">
 						</li>
 					</ul>
 					<div class="page">
