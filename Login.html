@@ -10,6 +10,19 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+		<script>
+			$(function(){
+
+				var url = location.href;
+				
+				$(document).ready(function(){
+					$(".button").click(function(){
+							
+							alert("登入成功");
+					});
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -44,10 +57,10 @@
 		<div class="Login">
 			<div class="page">
 			<h5 style="font-family:Microsoft JhengHei;">帳號或Email</h5>
-			<input type="text" name="LoginAccount"/><br>
+			<input type="text" class="LoginAccount"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">密碼</h5>
-			<input type="password" name="LoginPassword"/><br>
-			<input type="button" value="登入">
+			<input type="password" class="LoginPassword"/><br>
+			<input class="button" type="button" value="登入" onclick="location.href='HomePage.html'">
 			</div>
 		</div>
 	</div>

@@ -10,6 +10,18 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+		<script>
+			$(function(){
+
+				var url = location.href;
+
+				$(document).ready(function(){
+					$(".button").click(function(){
+						alert("註冊成功");
+					});
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -51,7 +63,7 @@
 			<input type="password" name="Password"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">確認密碼</h5>
 			<input type="password" name="ConfirmPassword"/><br>
-			<input type="button" value="送出">
+			<input type="button" class="button" value="送出" onclick="location.href='Login.html'">
 		</div>
 	</div>
 	</div>
