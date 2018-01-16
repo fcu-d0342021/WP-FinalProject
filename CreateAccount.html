@@ -15,12 +15,29 @@
 
 				var url = location.href;
 
-				$(document).ready(function(){
-					$(".button").click(function(){
-						alert("註冊成功");
+				$(document).ready(function()
+				{
+					$(".button").click(function()
+					{
+						var password = $("#Password");
+						var confirmPassword = $("#ConfirmPassword");
+						var email = $("#Email");
+						// var 
+
+						if(password.val()!=confirmPassword.val())
+						{
+							alert("密碼錯誤");
+						}
+						else
+						{
+							alert("註冊成功");
+							alert(password.val() + confirmPassword.val())
+							window.location.href='Login.html';
+						}
 					});
 				});
 			});
+			
 		</script>
 	</head>
 
@@ -56,14 +73,16 @@
     <div class="createAccount">
 		<div class="page">
 			<h5 style="font-family:Microsoft JhengHei;">Email</h5>
-			<input type="text" name="Email"/><br>
+			<input type="email" name="Email" id="Email"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">帳號</h5>
-			<input type="text" name="Username"/><br>
+			<input type="text" name="Username" id="Username"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">密碼</h5>
-			<input type="password" name="Password"/><br>
+			<input type="password" name="Password" id="Password"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">確認密碼</h5>
-			<input type="password" name="ConfirmPassword"/><br>
-			<input type="button" class="button" value="送出" onclick="location.href='Login.html'">
+			<input type="password" name="ConfirmPassword" id="ConfirmPassword"/><br>
+			<div style="padding-top: 7px">
+				<input type="button" class="button" value="送出">
+			</div>
 		</div>
 	</div>
 	</div>
