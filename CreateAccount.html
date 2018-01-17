@@ -22,16 +22,25 @@
 						var password = $("#Password");
 						var confirmPassword = $("#ConfirmPassword");
 						var email = $("#Email");
-						// var 
+						var emailFormat =  new RegExp("[a-zA-Z0-9._%-]+@[a-zA-Z0-9._%-]+\.[a-zA-Z]{2,4}");
+						var username = $("#Username");
 
 						if(password.val()!=confirmPassword.val())
 						{
 							alert("密碼錯誤");
 						}
+						else if(!emailFormat.test(email.val()))
+						{
+							alert("清輸入正確的email格式");
+						}
+						else if(username.val() == "")
+						{
+							alert("帳號不可為空白");
+						}
 						else
 						{
 							alert("註冊成功");
-							alert(password.val() + confirmPassword.val())
+							alert("您的密碼是 " + password.val() + " 可別忘了。");
 							window.location.href='Login.html';
 						}
 					});
@@ -73,7 +82,7 @@
     <div class="createAccount">
 		<div class="page">
 			<h5 style="font-family:Microsoft JhengHei;">Email</h5>
-			<input type="email" name="Email" id="Email"/><br>
+			<input type="email" name="Email" id="Email" required/><br>
 			<h5 style="font-family:Microsoft JhengHei;">帳號</h5>
 			<input type="text" name="Username" id="Username"/><br>
 			<h5 style="font-family:Microsoft JhengHei;">密碼</h5>
